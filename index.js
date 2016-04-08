@@ -19,7 +19,7 @@ app.get('/', function(request, response) {
   //response.render('pages/index');
   console.log('hi');
   response.json({
-      "hello": "world"
+      "auto": "deploy is good"
     }
   )
 });
