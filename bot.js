@@ -49,7 +49,7 @@ bot.message((msg) => {
     //icon_emoji: config('ICON_EMOJI'),
     channel: msg.channel,
     username: 'mentionbot',
-    text: '@yama you mentioned on GitHub',
+    text: '@yama mentioned on GitHub',
     link_names: 1
   }, (err, data) => {
     if (err) {
