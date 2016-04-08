@@ -1,6 +1,6 @@
 'use strict';
 
-var cool = require('cool-ascii-faces');
+let cool = require('cool-ascii-faces');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -19,7 +19,7 @@ app.get('/', function(request, response) {
   //response.render('pages/index');
   console.log('hi');
   response.json({
-      "auto": "deploy is good"
+      "auto": "deploy"
     }
   )
 });
