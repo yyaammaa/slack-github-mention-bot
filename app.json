@@ -1,0 +1,8 @@
+{
+  "name": "slack-github-mention-bot",
+  "description": "slack-github-mention-bot",
+  "repository": "https://github.com/yyaammaa/slack-github-mention-bot",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
