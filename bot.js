@@ -21,10 +21,18 @@ bot.message((msg) => {
       console.log('no attachments');
       return;
     }
+
+    let hasMention = false;
+    let isGitHub = false;
+
     _.each(attachments, at => {
       const text = at.text || '(no text)';
       const fallback = at.fallback || '(no fallback)';
-      console.log('text = ' + text + ', fallback = ' + fallback);
+      //console.log('text = ' + text + ', fallback = ' + fallback);
+      hasMention = text.includes('@yamabit');
+      isGitHub = fallback.includes('github.com');
+      console.log('hasMention = ' + hasMention + ', isGitHub = ' + isGitHub);
+      if (hasMention && isGitHub) return false;
     });
 
     return;
