@@ -33,8 +33,8 @@ app.listen(app.get('port'), (err) => {
 
   const token = config('SLACK_TOKEN');
   if (token) {
-    console.log('slack token = ' + token);
-    //  bot.listen({ token: config('SLACK_TOKEN') })
+    //console.log('slack token = ' + token);
+    bot.listen({token: config('SLACK_TOKEN')})
   } else {
     console.log('Oops! no slack token available.');
   }
